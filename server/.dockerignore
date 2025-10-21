@@ -1,0 +1,28 @@
+# Node.js
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Çevre değişkenleri
+.env
+.env.*
+!.env.example
+
+# Geliştirme dosyaları
+.git
+.gitignore
+.vscode
+.idea
+*.md
+!README.md
+
+# Test dosyaları
+__tests__
+*.test.js
+*.spec.js
+coverage
+
+# Diğer
+.DS_Store
+Thumbs.db
