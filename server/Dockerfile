@@ -24,3 +24,5 @@ EXPOSE 3001
 
 # Uygulamayı başlat
 CMD ["node", "src/index.js"]
+
+

@@ -84,3 +84,5 @@ module.exports = (sequelize) => {
 
   return Hasta;
 };
+
+

@@ -122,3 +122,5 @@ exports.logout = (req, res) => {
     message: 'Başarıyla çıkış yapıldı.'
   });
 };
+
+

@@ -22,3 +22,5 @@ router.put('/profile/update', kullaniciController.updateProfile);
 router.put('/profile/password', kullaniciController.updatePassword);
 
 module.exports = router;
+
+

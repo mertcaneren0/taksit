@@ -20,3 +20,5 @@ router.use('/ayarlar', ayarlarRoutes);
 router.use('/yedekleme', yedeklemeRoutes);
 
 module.exports = router;
+
+

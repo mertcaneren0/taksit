@@ -3,3 +3,5 @@ window.ENV = {
   SITE_NAME: 'EE Yönetim',
   VERSION: '1.0.0'
 };
+
+

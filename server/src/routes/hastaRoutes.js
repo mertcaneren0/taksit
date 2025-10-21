@@ -23,3 +23,5 @@ router.put('/:hastaId/taksitler/:taksitId', taksitController.updateTaksit);
 router.put('/:hastaId/taksitler/:taksitId/odeme', taksitController.updateTaksitOdeme);
 
 module.exports = router;
+
+
