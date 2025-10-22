@@ -18,6 +18,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import PaymentIcon from '@mui/icons-material/Payment';
 import MoneyOffIcon from '@mui/icons-material/MoneyOff';
 import LogoutIcon from '@mui/icons-material/Logout';
+import Inventory2Icon from '@mui/icons-material/Inventory2';
 import { useAuth } from '../../context/AuthContext';
 
 // Drawer genişliği
@@ -48,6 +49,7 @@ const MainLayout = () => {
     { text: 'Anasayfa', icon: <HomeIcon />, path: '/' },
     { text: 'Taksitli Hastalar', icon: <PaymentIcon />, path: '/taksitli-hastalar' },
     { text: 'Borcu Olan Hastalar', icon: <MoneyOffIcon />, path: '/borclu-hastalar' },
+    { text: 'Depo ve Sipariş', icon: <Inventory2Icon />, path: '/depo-siparis' },
   ];
 
   const drawer = (

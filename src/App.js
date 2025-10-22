@@ -13,6 +13,7 @@ import MainLayout from './components/layout/MainLayout';
 import TaksitliHastalarPage from './pages/TaksitliHastalarPage';
 import BorcluHastalarPage from './pages/BorcluHastalarPage';
 import HomePage from './pages/HomePage';
+import InventoryPage from './pages/InventoryPage';
 
 // Context
 import { useAuth } from './context/AuthContext';
@@ -57,6 +58,7 @@ function App() {
             <Route index element={<HomePage />} />
             <Route path="taksitli-hastalar" element={<TaksitliHastalarPage />} />
             <Route path="borclu-hastalar" element={<BorcluHastalarPage />} />
+            <Route path="depo-siparis" element={<InventoryPage />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

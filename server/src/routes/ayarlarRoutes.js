@@ -19,3 +19,4 @@ router.put('/', isAdmin, ayarlarController.updateAyarlar);
 module.exports = router;
 
 
+

@@ -104,8 +104,37 @@ export const api = {
     export: () => apiRequest('/yedekleme/export', 'GET'),
     import: (data) => apiRequest('/yedekleme/import', 'POST', data),
   },
+
+  // Envanter (Depo ve Sipariş)
+  inventory: {
+    alertsSummary: () => apiRequest('/inventory/alerts/summary', 'GET'),
+    materials: (params = {}) => {
+      const qs = new URLSearchParams(params).toString();
+      const suffix = qs ? `?${qs}` : '';
+      return apiRequest(`/inventory/materials${suffix}`, 'GET');
+    },
+    materialById: (id) => apiRequest(`/inventory/materials/${id}`, 'GET'),
+    priceHistory: (id) => apiRequest(`/inventory/materials/${id}/price-history`, 'GET'),
+    stockLots: (id, locationId) => {
+      const qs = locationId ? `?locationId=${locationId}` : '';
+      return apiRequest(`/inventory/materials/${id}/stock-lots${qs}`, 'GET');
+    },
+    movements: (id, params = {}) => {
+      const qs = new URLSearchParams(params).toString();
+      const suffix = qs ? `?${qs}` : '';
+      return apiRequest(`/inventory/materials/${id}/movements${suffix}`, 'GET');
+    },
+    orders: (params = {}) => {
+      const qs = new URLSearchParams(params).toString();
+      const suffix = qs ? `?${qs}` : '';
+      return apiRequest(`/inventory/orders${suffix}`, 'GET');
+    },
+    createOrder: (payload) => apiRequest('/inventory/orders', 'POST', payload),
+    stockIn: (payload) => apiRequest('/inventory/stock/in', 'POST', payload),
+  },
 };
 
 export default api;
+
 
 
